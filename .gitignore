@@ -1,0 +1,6 @@
+/node_modules
+/nginx
+.dockerignore
+docker-compose.yml
+Dockerfile
+docker-compose-copy.yml
