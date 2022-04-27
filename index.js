@@ -32,7 +32,7 @@ app.get('/abracadabra/juego/:nombre', (req, res, next) => {
   res.sendFile(__dirname + '/index.html');
 });
 
-//RUTA JUEGO, Este bloque debe ir y declarar antes de la validacion de usuarios
+//RUTA JUEGO, Este bloque debe ir y declarar DESPUES del next de usuarios
 app.get('/abracadabra/conejo/:n', (req, res) => {
   const random = Math.floor(Math.random() * (5 - 1)) + 1;
   const n = req.params.n;
